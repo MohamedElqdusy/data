@@ -5,7 +5,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>data-process</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>data-process</name>
@@ -87,9 +87,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin>	
 		</plugins>
 	</build>
-
 
 </project>

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:3.6.5
+    ports:
+    - 27017:27017
+    command: --smallfiles
+      
+  app:
+    build: .
+    ports:
+    - 8080:8080
+    links:
+    - mongo
+    entrypoint: "java -Djava.security.egd=file:/dev/./urandom -jar /app.jar"
