@@ -15,7 +15,7 @@ import com.example.app.model.Message;
 import com.example.app.service.MessageService;
 
 @RestController
-public class controller {
+public class Controller {
 
 	@Autowired
 	MessageService messageService;
@@ -30,7 +30,8 @@ public class controller {
 	}
 
 	@RequestMapping("/messages")
-	public List<Message> listAllMessages(Message message) {
-		return messageService.findAll(message);
+	public List<Message> listAllMessages() {
+		return messageService.findAll();
 	}
+
 }
