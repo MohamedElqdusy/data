@@ -37,6 +37,9 @@ function showMessage(message) {
 }
 
 $(function () {
+    $("form").on('submit', function (e) {
+        e.preventDefault();
+    });
     $( "#connect" ).click(function() { connect(); });
     $( "#disconnect" ).click(function() { disconnect(); });
 });
